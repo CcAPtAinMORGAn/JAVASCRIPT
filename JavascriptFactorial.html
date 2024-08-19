@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Factorial</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 4!= 4*3*2*1
+		// HERE factorial = 1; IS WHAT MULTIPLIES WITH THE EVERY NUMBER IN LOOP FROM 1 TO 9
+		// let n = 9
+		// let factorial = 1;
+		// for (let i = 1; i <= n; i++)
+		// {
+		// 	factorial *= i;
+		// }
+		// console.log(factorial)
+
+		// PROMPT METHOD
+		let n = parseInt(prompt("Enter Number"));
+		let factorial = 1;
+		for (let i = 1; i <= n; i++)
+		{
+			factorial *= i;
+			// HERE *= MEANS ALL i IN THE LOOP UPTO n WILL BE MULTIPLIED
+		}
+		document.write(`${factorial}`)
+
+		// ADING ALL NUMBERS IN THE LOOP
+		// let n = 9
+		// let SUM = 0;
+		// for (let i = 1; i <= n; i++)
+		// {
+		// 	SUM += i;
+		// }
+		// console.log(SUM)
+	</script>
+</body>
+</html>

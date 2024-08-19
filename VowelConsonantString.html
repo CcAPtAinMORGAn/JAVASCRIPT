@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>strings</title>
+</head>
+<body>
+<script type="text/javascript">
+
+		// var name = "india is the best country"
+
+		// document.write("upper:"+name.toUpperCase()+"<br>")
+		// document.write("Lower:"+name.toLowerCase()+"<br>")
+		// document.write("Index:"+name.indexOf('d')+"<br>")
+		// document.write("Last Index Of : "+name.lastIndexOf('i')+"<br>")	
+		// document.write("Length:"+name.length+"<br>")
+		// document.write("substring:"+name.substring(3)+"<br>")
+		// document.write("substring:"+name.substring(3,9)+"<br>")
+		// document.write("Char At:"+name.charAt(3)+"<br>")
+		// document.write("Replace :"+name.replace("india","japan")+"<br>")
+
+		let str = prompt("ENTER STRING/WORD WITHOUT SPACE")
+		let vowel=0;
+		let consonant=0;
+
+		for(let i=0;i<str.length;i++)
+		{
+			if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u'||
+				str.charAt(i)=='A'||str.charAt(i)=='E'||str.charAt(i)=='I'||str.charAt(i)=='O'||str.charAt(i)=='U')
+
+			{
+				vowel++
+			}
+			else
+			{
+				consonant++
+			}
+		}
+
+		document.write("vowel : " +vowel+ "<br>")
+		document.write("consonant : " +consonant)
+
+
+</script>
+
+</body>
+</html>

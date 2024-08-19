@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Marksheet</title>
+
+</head>
+<body>
+	<form name="frm">
+		<p>SCIENCE:<input type="number" name="SCIENCE"></p>
+		<p>HINDI:<input type="number" name="HINDI"></p>
+		<p>MARATHI:<input type="number" name="MARATHI"></p>
+		<p><input type="button" value="Calculate" onclick="Calculate()"></p>
+		<p>TOTAL:<input type="number" name="TOTAL"  disabled></p> -->
+		 <!-- DONT FORGET TO PUT input type="text" BECAUSE WE ARE PRINTING `${PERCENTAGE}%` % SIGN ALONG WITH PERCENTAGE VALUE IN INPUT FORM -->
+
+		<!-- <p>PERCENTAGE:<input type="text" name="PERCENTAGE"  disabled></p>
+	</form>
+
+	<script type="text/javascript">
+		function Calculate()
+		{
+			let SCIENCE = parseInt(document.frm.SCIENCE.value)
+			let HINDI = parseInt(document.frm.HINDI.value)
+			let MARATHI = parseInt(document.frm.MARATHI.value)
+
+			let TOTAL = SCIENCE+HINDI+MARATHI
+			let PERCENTAGE = (TOTAL/300)*100
+
+			 document.frm.TOTAL.value=TOTAL
+			 document.frm.PERCENTAGE.value=`${PERCENTAGE}%`
+		}
+	</script>
+
+</body>
+</html> -->
+<!-- PROMPT METHOD -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Marksheet</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let SCIENCE = parseInt(prompt("Enter marks in SCIENCE"));
+		let HINDI = parseInt(prompt("Enter marks in HINDI"));
+		let MARATHI = parseInt(prompt("Enter marks in MARATHI"));
+
+		let TOTAL = SCIENCE+HINDI+MARATHI
+        let PERCENTAGE = (TOTAL/300)*100
+
+        document.write("TOTAL IS : 	" +TOTAL +"<br>");
+        document.write("PERCENTAGE IS : 	" +PERCENTAGE +"%");
+	</script>
+
+</body>
+</html>

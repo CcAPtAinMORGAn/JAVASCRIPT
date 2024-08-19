@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy Stock</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        let a=[5,0,9,8,3]
+        //     0 1 2 3 4
+        //     a.length=5
+        // Difference=[];
+        buyday = 0;
+        sellday = 0;
+        maxprofit = 0;
+
+        for(i=a.length-1;i>=0;i--)
+        {
+            for(j=i-1;j>=0;j--)
+            {
+                Diff=a[i]-a[j]
+                
+                if(Diff > maxprofit)
+                {
+                    maxprofit = Diff;
+                    buyday = j;
+                    sellday = i;
+                    document.write("maxprofit iteration wise= "+maxprofit+"<br>")
+                }
+            }
+        }
+        
+        document.write("Maxprofit : "+maxprofit +"<br>Buyday : "+buyday +"<br>Sellday : "+sellday)
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buy stock</title>
+</head>
+<body>
+<script type="text/javascript">
+let a = [1,1,5,8,4]
+let Maxprofit=0
+let buyday=0;
+let sellday=0;
+for(let i=a.length-1;i>=0;i--)
+{
+    for(let j=i-1;j>=0;j--)
+    {
+        Diff=a[i]-a[j]
+        if(Diff>Maxprofit)
+        {
+            Maxprofit=Diff;
+            buyday=j;
+            sellday=i;
+        }
+    }
+}
+
+document.write("Maxprofit = "+Maxprofit+"<br>")
+document.write("Buyday = "+buyday+"<br>")
+document.write("Sellday = "+sellday+"<br>")
+</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Buy stock</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	let prices = [7,1,1,5,3,6,4]
+    Difference=[];
+   for (let i=prices.length-1; i>=0;i--)
+    {
+        for(let j=i-1;j>=0;j--)
+        {
+            Diff=prices[i]-prices[j]
+            Difference.push(Diff);
+        }
+    }
+    let Maxprofit=Math.max(...Difference)
+   
+   if(Maxprofit<0)
+   {
+       document.write(0)
+   }
+
+   document.write(Maxprofit)
+  
+</script>
+</body>
+</html> -->

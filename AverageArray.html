@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array average</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var num = [[45,5,45,78],[54,45,41,74],[45,63,85,46],[45,55,81,29]];
+
+		var total = 0;
+		
+		var average =0.0;
+
+		for(var i=0;i<num.length;i++)
+		{
+			for(var j=0;j<num[i].length;j++)
+			{
+				total+=num[i][j];
+			}
+
+			average=total/num[i].length;
+
+			document.write("Student "+parseInt(i+1)+" average: "+average.toFixed(2)+"<br><br>");
+			total=0;
+			average=0.0;
+		}
+
+
+	</script>
+
+</body>
+</html>

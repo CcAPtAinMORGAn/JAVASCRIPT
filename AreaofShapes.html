@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        // let R = 5;
+        // let Circle = 3.14*R*R;
+        // console.log("Circle :" + Circle);
+
+        // let l=5;
+        // let b=10;
+        // let Rectangle = l*b;
+        // console.log("Rectangle :" + Rectangle);
+
+        // let side = 5;
+        // let Square = side * side;
+        // console.log("Square :" + Square);
+
+        // let base = 10;
+        // let height = 20;
+        // Triangle = 0.5*base*height;
+        // console.log("Triangle :" + Triangle);
+
+        // PROMPT METHOD
+        let R=parseInt(prompt("Enter Radius For Circle"));
+        let Circle = 3.14*R*R;
+        document.write("Circle :" + Circle);
+        
+        let l=parseInt(prompt("Enter Length For Rectangle"));
+        let b=parseInt(prompt("Enter Breadth For Rectangle"));
+        let Rectangle = l*b;
+        document.write("<br><br>Rectangle :" + Rectangle);
+
+        let Side=parseInt(prompt("Enter Length For Side Of Square"));
+        let Square = Side * Side;
+        document.write("<br><br>Square :" + Square);
+
+        // AT A TIME ONLY FOUR PROMPTS WORK THEREFORE COMMENTED.
+        // let Base=parseInt(prompt("Enter Length For Base Of Triangle"));
+        // let Height=parseInt(prompt("Enter Length For Height Of Triangle"));
+        // let Triangle=0.5*Base*Height;
+        // document.write("Triangle :" + Triangle);
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Area Calculator</title>
+</head>
+<body>
+
+<h2>Area Calculator</h2>
+
+<form id="areaForm">
+    Circle Radius:<br><input type="number" id="circleRadius" step="any" placeholder="Enter radius">
+    <br>
+
+    Square Side:<br><input type="number" id="squareSide" placeholder="Enter side length">
+    <br>
+
+    Triangle Base:<br><input type="number" id="triangleBase" placeholder="Enter base length">
+    <br>
+
+    Triangle Height:<br><input type="number" id="triangleHeight" placeholder="Enter height">
+    <br>
+
+    Rectangle Length:<br><input type="number" id="rectangleLength" placeholder="Enter length">
+    <br>
+
+    Rectangle Width:<br><input type="number" id="rectangleWidth" placeholder="Enter width">
+    <br><br>
+
+    <input type="button" value="Calculate" onclick="calculateArea()">
+
+    <p><textarea rows="8" cols="72" id="Display" disabled></textarea></p>
+
+</form>
+
+<p id="result"></p>
+
+<script type="text/javascript">
+function calculateArea() 
+{
+    let circleRadius = parseInt(document.getElementById("circleRadius").value);
+    let squareSide = parseInt(document.getElementById("squareSide").value);
+    let triangleBase = parseInt(document.getElementById("triangleBase").value);
+    let triangleHeight = parseInt(document.getElementById("triangleHeight").value);
+    let rectangleLength = parseInt(document.getElementById("rectangleLength").value);
+    let rectangleWidth = parseInt(document.getElementById("rectangleWidth").value);
+
+    let circleArea = Math.PI * circleRadius * circleRadius;
+    let squareArea = squareSide * squareSide;
+    let triangleArea = 0.5 * triangleBase * triangleHeight;
+    let rectangleArea = rectangleLength * rectangleWidth;
+
+    document.getElementById("Display").value = 
+            `CircleArea: ${circleArea}
+            \nSquareArea: ${squareArea}
+            \nTriangleArea: ${triangleArea}
+            \nRectangleArea:${rectangleArea}`;
+}
+</script>
+</body>
+</html>
+ -->

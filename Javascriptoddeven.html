@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ODD EVEN</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let num=parseInt(prompt("Enter number to find out if odd or even"))
+		if(num%2==0)
+		{
+			document.write("Number is even")
+		}
+		else
+		{
+			document.write("Number is odd")
+		}
+	</script>
+
+</body>
+</html>
+<!-- OR THIS METHOD CAN ALSO BE USED. -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ODD AND EVEN NO.</title>
+</head>
+<body>
+	<form name="frm">
+		<p>Enter Number :<input type="number" name="num"></p>
+		<p><input type="button" value="Check" onclick="Check()"></p>
+		<p>Answer :<input type="text" name="ans" disabled></p>
+	</form>
+
+	<script type="text/javascript">
+function Check() {
+    // Extracting the value entered in the 'num' input field and converting it to an integer
+    let num = parseInt(document.frm.num.value);
+
+    // Checking if 'num' is divisible by 2 with no remainder, indicating an even number
+    if (num % 2 == 0) {
+        document.frm.ans.value = "Even Number";
+    } else {
+    // If 'num' is not divisible by 2 with no remainder, it's an odd number
+        document.frm.ans.value = "Odd Number";
+    }
+}
+
+	</script>
+
+</body>
+</html> -->

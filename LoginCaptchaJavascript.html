@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login page</title>
+</head>
+<body>
+<fieldset>
+	<legend>login</legend>
+	<form name="frm">
+		<p>LoginId:- <input type="text" name="LoginId"></p>
+		<p>Password:- <input type="text" name="Password"></p>
+		<p id="Captcha"  style="background-color: yellow; width: 5%;">  </p>
+		<p>Captcha:- <input type="text" name="CaptchaCheck" ></p>
+		<p><input type="button" value="Login" onclick="Login()" ></p>	
+		<p><input type="text" name="Output" disabled></p>
+	</form>
+<script type="text/javascript">
+		var data1=[0,1,2,3,4,5,6,'a','b','c','d']
+		var s = ""
+		for(i=1;i<=5;i++)
+		{
+			s=s+data1[Math.floor(Math.random()*data1.length)]
+		}
+		
+		document.getElementById("Captcha").innerHTML=s
+
+		function Login()
+		{
+			let LoginId = document.frm.LoginId.value;
+			let Password = document.frm.Password.value;
+			let CaptchaCheck = document.frm.CaptchaCheck.value;
+
+			if(LoginId=="Yash" && Password==1234 && CaptchaCheck==s)
+			{
+				document.frm.Output.value="LOGIN SUCCESSFUL";
+			}
+			else
+        	{
+            document.frm.Output.value = "LOGIN FAILED";
+        	}
+
+		}
+</script>
+
+</fieldset>
+
+
+</body>
+</html>

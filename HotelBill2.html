@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BILL</title>
+</head>
+<body>
+	<center><h2>HOTEL SWITCH</h2></center>
+	<hr color="black">
+	<center>
+	<form name="frm">
+	<fieldset>
+	   	<legend>Menu</legend>
+	   	<p>select your item</p>
+	   	<select name="item">
+	   		<option>...select your order...</option>
+	   		<option value="chai">chai 10 rupees</option>
+	   		<option value="coffee">coffee 700 rupees</option>
+	   		<option value="juice"> juice 100 rupees</option>
+	   	</select><br><br>
+        
+        <input type="button" value="check order" onclick="check()">
+        <br><br>
+        your order:- <input type="text" name="txtorder"><br><br>
+        quantity:- <input type="text" name="qty"><br><br>
+        <input type="button"  value="calculate" onclick="calc()">
+	</fieldset><br><br>
+	   Total:- <input type="text" name="tt1"><br><br>
+	   GST 10%:- <input type="number" name="txtgst"><br><br>
+	   Gross price:- <input type="number" name="txtgrs">
+	</form>
+	</center>
+       
+    <script type="text/javascript">
+    	var order,qty,tt1,txtgst,txtgrs;
+
+    	function check()
+    	{   
+    		// // THIS IS GIVING VALUE TO OPTION
+    		// order = document.frm.item.value;
+    		// // THIS IS ASKING THE SELECTED ORDER TO BE DISPLAYED IN YOUR ORDER INPUT
+    		// document.frm.txtorder.value=order
+    		
+            let item = document.frm.item.value;
+            document.frm.txtorder.value= `${item}`
+
+    	}
+
+    	function calc()
+    	{   let item = document.frm.item.value;
+    		qty = parseInt(document.frm.qty.value);
+    		switch(item)
+    		{
+    		case"chai":
+    			price = 10;
+    			break;
+
+    			case"coffee":
+    			price = 700;
+    			break;
+
+    			case"juice":
+    			price = 100;
+    			break;
+    		}
+
+    	tt1 = price*qty;
+        document.frm.tt1.value = tt1;
+
+        txtgst = (18/100)*tt1;
+        document.frm.txtgst.value = txtgst;
+
+        txtgrs = tt1 + txtgst;
+        document.frm.txtgrs.value = txtgrs;
+    	}
+    </script>
+
+
+
+
+
+
+</body>
+</html>

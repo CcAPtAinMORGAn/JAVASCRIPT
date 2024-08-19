@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Square and Cube Calculator</title>
+</head>
+<body>
+
+<h2>Square and Cube Calculator</h2>
+
+<form id="calculatorForm">
+    Enter a number:<input type="number" id="numberInput">
+    <br><br>
+    <input type="button" value="Calculate" onclick="calculate()">
+    <p><textarea rows="5" cols="34" id="Display" disabled></textarea></p>
+</form>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+    let number = parseInt(document.getElementById("numberInput").value);
+
+    let square = number * number;
+    let cube = number * number * number;
+
+    document.getElementById("Display").value = 
+            `square: ${square}
+            \ncube: ${cube}`;
+}
+</script>
+
+</body>
+<!-- Console.log method -->
+<!-- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Square and Cube Calculator</title>
+</head>
+<body>
+
+<h2>Square and Cube Calculator</h2>
+
+<form id="calculatorForm">
+    Enter a number:<input type="number" id="numberInput">
+    <br><br>
+    <input type="button" value="Calculate" onclick="calculate()">
+</form>
+
+<script>
+function calculate() {
+    let number = parseInt(document.getElementById("numberInput").value);
+
+    let square = number * number;
+    let cube = number * number * number;
+
+    console.log("Square:", square);
+    console.log("Cube:", cube);
+}
+</script>
+
+</body>
+</html>
+
+ -->

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM ONE BUTTON</title>
+
+    <style type="text/css">
+        .cont
+        {
+            height: 800px;
+            width: 100%;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box
+        {
+            height: 550px;
+            width: 350px;
+            background: white;
+        }
+        .box img
+        {
+            height: 250px;
+            width: 80%;
+            margin: 34px;
+            margin-bottom: 0px;
+        }
+        h1
+        {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 42px;
+            color: red;
+        }
+        button
+        {
+            padding: 10px 20px;
+            margin-left: 35px;
+            margin-top: 24px;
+            outline: none;
+            border-radius: 10px;
+            font-weight: bolder;
+            background-color: green; /* Default button color */
+        }
+        .btn-remove
+        {
+            background-color: red; /* Color when "Remove Friend" is displayed */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <div class="box">
+            <img src="file:///C:/Users/Admin/Downloads/snowy-mountain-peak-starry-galaxy-majesty-.avif" class="img">
+            <h1>Stranger</h1>
+            <button id="toggleFriend" class="btn">Add Friend</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var h1 = document.querySelector('h1');  // Tag h1
+        var btnToggle = document.getElementById('toggleFriend');  // button with id toggleFriend
+        var img = document.querySelector('.img');  // class img--.img
+
+        btnToggle.addEventListener("click", function() 
+        {
+            if (h1.innerHTML === 'Stranger') 
+            {
+                h1.innerHTML = 'Friends';
+                h1.style.color = 'green';
+                btnToggle.textContent = 'Remove Friend';
+                btnToggle.classList.add('btn-remove'); // Add the class for red color
+                img.src = "file:///C:/Users/Admin/Downloads/JAPANESE%20CITY%20STREET.avif";
+            } 
+            else 
+            {
+                h1.innerHTML = 'Stranger';
+                h1.style.color = 'red';
+                btnToggle.textContent = 'Add Friend';
+                btnToggle.classList.remove('btn-remove'); // Remove the class for red color
+                img.src = "file:///C:/Users/Admin/Downloads/PINK%20BLOSSOM%20STREET.jpg";
+            }
+        });
+    </script>
+
+</body>
+</html>

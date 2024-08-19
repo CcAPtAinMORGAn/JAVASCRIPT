@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Two sum</title>
+</head>
+<body>
+    <script type="text/javascript">
+            /**
+            //  * @param {number[]} nums
+            //  * @param {number} target
+            //  * @return {number[]}
+            //  */
+            // var twoSum = function(nums, target) 
+            // // [2,7,11,15] target=9 output=[0,1]
+            // //  0 1  2  3 <==INDEX
+            // {
+            //     // new Map(); attribute creates a map [] which is empty
+            //     let map = new Map();
+            //     // Here nums.length ==> Total no. of numbers present in the array i.e 4 in this case.
+            //     for(let i=0;i<nums.length;i++)
+
+            //         // THIS IS HOW THE LOOP RUNS
+            //         // ***************************************************************************************************
+            //         // 1)9-2=7 HERE 7 IS NOT IN THE MAP SO 7 GOES TO THE MAP THROUGH THE else CONDITION map.set(nums[i],i)
+            //         //   map.set(9-2(LOOP==>0),0)==>[2,0] HERE 0 GOES TO MAP INDEX AND 2 TO THE ARRAY SO MAP BECOMES==>map[2,_,_,_]
+            //         // ***************************************************************************************************
+            //         // 2)9-7=2 HERE 2 IS IN THE MAP==>map[2,_,_,_] SO HERE THE if CONDITION GETS TRUE SO 
+            //         // return[map.get(target-nums[i]),i]==>return[map.get(9-7[LOOP==>1]),1]
+            //         // ==>return[map.get(2),1]==>THUS [2,1]
+            //         // BUT SINCE WHENEVER WE USE map.get(target-nums[i]) WE GET THE INDEX OF THE SUBTRACTED VALUE 
+            //         // WHICH HERE IS 9-7=2 INDEX OF 2 IS 0 THUS [0,1]==>IS THE OUTPUT
+
+            //         //****************************************************************************************************
+            //     {   
+            //         // Here map.has is used to check the values in the map==>  map[]
+            //         // Here in target-nums[i] ==> i represents the loop which goes 0-1-2-3
+            //         if(map.has(target-nums[i]))
+            //         {
+            //          // Here map.get is used to get  the index of the value i.e target-nums[i]=2==>INDEX VALUE ==>0 from the map==>  [2,_,_,_]
+            //                   //  0 1  2  3 <==INDEX
+            //          return[map.get(target-nums[i]),i]
+            //         }
+
+            //         else
+            //         //ONLY AFTER THE ELSE CONDITION WE CAN GET OUTPUT FROM if CONDITION. 
+            //         // Here map.set is used to place the values in the map==>  map[2,_,_,_]
+            //         {
+            //             map.set(nums[i],i)
+            //         }
+            //     }   
+            //     return[];
+            // };
+
+let a=[5,4,3,2,3,6];
+let sum=0;
+let target=9
+for(let i=0;i<a.length;i++)
+{
+    for(let j=i+1;j<a.length;j++)
+    {
+        sum=a[i]+a[j]
+        if(sum==target)
+        {
+            document.write("Indexes that give target are "+i+","+j+"<br>")
+        }
+    }
+}
+
+    </script>
+
+</body>
+</html>

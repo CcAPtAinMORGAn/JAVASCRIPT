@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JAVASCRIPT BILL</title>
+</head>
+<body>
+    <form>
+        <select id="Pizzacost">
+            <option value="499">CHEESY CHICKEN PIZZA@499/-</option>
+            <option value="489">PEPPY PANEER PIZZA@489/-</option>
+            <option value="259">MARGHERITA PIZZA@259/-</option>
+            <option value="459">VEGGIE PARADISE PIZZA@459/-</option>
+            <option value="449">FARMHOUSE PIZZA@449/-</option>
+        </select>
+        QTY <input type="number" id="PizzaQuantity">
+        <input type="button" value="ADD TO CART" onclick="CartButton()">
+        <br>
+        <p>BILL</p>
+        <p><textarea rows="5" cols="72" id="BILL" disabled></textarea></p>
+    </form>
+
+    <script type="text/javascript">
+        function CartButton()
+        {
+            let Pizzacost = parseInt(document.getElementById("Pizzacost").value);
+            let PizzaQuantity = parseInt(document.getElementById("PizzaQuantity").value);
+            let originalCost = Pizzacost * PizzaQuantity;
+
+            // 18% GST LOGIC
+            let gstAmount = (18 / 100) * originalCost;
+            let totalCost = originalCost + gstAmount;
+
+            document.getElementById("BILL").value = 
+            `Original Cost: ${Pizzacost} * ${PizzaQuantity} = ${originalCost}/-
+            \nGST (18%): ${gstAmount}/-
+            \nTotal Cost: ${totalCost}/-`;
+        }
+    </script>
+
+</body>
+</html>

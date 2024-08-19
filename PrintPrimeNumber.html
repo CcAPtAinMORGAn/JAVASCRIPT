@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PRINT PRIME NUMBER</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let num=parseInt(prompt("ENTER NUMBER"))
+
+		for(let i=1;i<=num;i++)
+		{
+			let b=0;
+			for(let j=1;j<=i;j++)
+			{
+				if(i%j==0)
+				{
+					b++
+				}
+			}
+
+			if(b==2)
+			{
+			document.write(i+"--PRIME<br>")
+			}
+			// // TO PRINT NON PRIME NUMBERS AS WELL
+			// else
+			// {
+			// 	document.write(i+"--NON PRIME<br>")
+			// }
+		}
+
+		
+
+	</script>
+
+</body>
+</html>

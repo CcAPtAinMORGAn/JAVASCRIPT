@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Star Print</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// First iteration of the outer loop (i = 1):
+		// Inner loop (j) runs once printing one asterisk (*).
+		// After inner loop execution, it writes a line break (<br>).
+
+		// Second iteration of the outer loop (i = 2):
+		// Inner loop (j) runs twice printing two asterisks (**).
+		// After inner loop execution, it writes a line break (<br>).
+
+		for(let i=1;i<=5;i++)
+		{
+			for(let j=1;j<=i;j++)
+			{
+				document.write("*")
+			}
+
+			document.write("<br>")
+		}
+	</script>
+
+</body>
+</html>

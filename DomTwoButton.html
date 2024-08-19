@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM TWO BUTTON</title>
+
+	<style type="text/css">
+		.cont
+		{
+			height: 800px;
+			width: 100%;
+			background: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.box
+		{
+			height: 550px;
+			width: 350px;
+			background: white;
+		}
+		.box img
+		{
+			height: 250px;
+			width: 80%;
+			margin: 34px;
+			margin-bottom: 0px;
+		}
+		h1
+		{
+			text-align: center;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			font-size: 42px;
+			color: red;
+		}
+		button
+		{
+			padding: 10px 20px;
+			margin-left: 35px;
+			margin-top: 24px;
+			outline: none;
+			border-radius: 10px;
+			font-weight: bolder;
+		}
+		.btn
+		{
+			background-color: green;
+		}
+		.btn3
+		{
+			margin-left: 110px;
+			background-color: green;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="cont">
+		<div class="box">
+			<img src="file:///C:/Users/Admin/Downloads/snowy-mountain-peak-starry-galaxy-majesty-.avif" class="img">
+			<h1>Stranger</h1>
+			<button class="btn">Add Friend</button>
+			<button class="btn2">Remove Friend</button>
+			<button class="btn3">Add Friend</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		// var a = document.getElementById('')  	 // Id 
+		// var a = document.getElementByClass('')   // Class
+		// var a = document.getElementByTagName('') // Tag
+		
+		var h1 = document.querySelector('h1')  // Tag h1
+		var btn1 = document.querySelector('.btn')  // class btn-- .btn
+		var btn2 = document.querySelector('.btn2') // class btn2-- .btn2
+		// var btn3 = document.querySelector('.btn3') // class btn3-- .btn3
+		var img = document.querySelector('.img')  // class img--.img
+		
+		// dblclick == double click
+		
+		btn1.addEventListener("click", function()
+		{
+			h1.innerHTML='Friends'
+			h1.style.color='green'
+			btn1.style.backgroundColor='white'
+			btn2.style.backgroundColor='red'
+			img.src= "file:///C:/Users/Admin/Downloads/JAPANESE%20CITY%20STREET.avif"
+		})
+		btn2.addEventListener("click", function()
+		{
+			h1.innerHTML='Stranger'
+			h1.style.color='red'
+			btn1.style.backgroundColor='green'
+			btn2.style.backgroundColor='white'
+			img.src = "file:///C:/Users/Admin/Downloads/PINK%20BLOSSOM%20STREET.jpg"
+		})
+	</script>
+
+</body>
+</html>

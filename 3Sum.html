@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>3Sum</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let a=[1,5,12,8]
+		    // 0 1 2  3
+		let sum=14;
+
+		for(let i=0;i<a.length;i++)
+		{
+			for(j=i+1;j<a.length;j++)
+			{
+				for(k=j+1;k<a.length;k++)
+				{
+					if(a[i]+a[j]+a[k]==sum)
+					{	
+						document.write("Values of i,j,k are " +i+","+j+","+k+"<br>")
+						document.write(a[i]+","+a[j]+","+a[k])
+					}
+				}
+			}
+		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sum of even no.</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let n=parseInt(prompt("Enter Number"));
+		let sum=0;
+		// HERE THE sum VARIABLE ON THE LEFT SIDE IS USED FOR THE STORING OF VALUE
+        // EG n=5 THEN LOOP WILL BE LIKE i=1,i=2,i=3, i=4,i=5
+        // AFTER THAT EVEN NO. IS FOUND USING if(i%2==0) FROM THE LOOP SO FIRST WE WILL GET i=2
+        // THEN sum=0+2 so sum=2
+        // THEN WE WILL GET i=4 THEN sum=2+4 so sum=6
+        // AND THE sum on left side is updated again after every loop first sum=0 then sum = 2 then sum = 6
+		for(let i = 1; i <= n; i++)
+		{
+			if(i%2==0)
+			{
+
+				sum=sum+i;
+			}
+		}
+		document.write(sum);
+	</script>
+
+</body>
+</html>

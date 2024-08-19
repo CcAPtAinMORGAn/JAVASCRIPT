@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TABLE OF ANY NO.</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // for(let i = 1; i<=10; i++)
+        // // HERE , IS FOR SPACE PURPOSE
+        // // HERE "2*" AND "=" ARE VARIABLES WHICH WE WANT TO BE PRINTED ALONG THE LOOP
+        // // AND 2*i IS THE LOGIC OF THE TABLE 
+        // {
+        //     console.log("2*" +i, "=",2 * i)
+        // }
+
+        // PROMPT METHOD
+        let Number = parseInt(prompt("Enter Number"));
+        document.write(`Table of ${Number}:<br>`);
+        for (let i = 1; i <= 10; i++) 
+        // WE USE ${Number} TO PRINT VALUE GIVEN DURING PROMPT TO VARIABLE Number.
+        // WE WRITE ${Number} * ${i} BECAUSE WE WANT TO PRINT THE VALUE WE GAVE IN PROMPT TO THE VARIABLE. 
+        {
+        document.write(`${Number} * ${i} = ${Number * i}<br>`);
+        }
+
+    </script>
+
+</body>
+</html>

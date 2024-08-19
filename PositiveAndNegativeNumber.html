@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>POSITIVE AND NEGATIVE NUMBER</title>
+</head>
+<body>
+	<form name="frm">
+		<p>ENTER NUMBER: <input type="number" name="number"></p>
+		<p><input type="button" name="button" value="Check" onclick="Check()"></p>
+		<p>OUTPUT: <input type="text" name="OUTPUT" disabled></p>
+	</form>
+
+	<script type="text/javascript">
+		function Check()
+		{
+			let number = parseInt(document.frm.number.value);
+
+			if(number>0)
+			{
+               document.frm.OUTPUT.value = "NUMBER IS POSITIVE."
+			}
+
+			else if(number == 0)
+			{
+               document.frm.OUTPUT.value = "NUMBER IS EQUAL TO ZERO."
+			}
+
+			else 
+			{
+				document.frm.OUTPUT.value = "NUMBER IS NEGATIVE."
+			}
+
+		}
+	</script>
+</body>
+</html> -->
+
+<!-- PROMPT METHOD -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>POSITIVE AND NEGATIVE NUMBER</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let number = parseInt(prompt("ENTER NUMBER"))
+
+		if(number>0)
+			{
+               document.write("NUMBER IS POSITIVE.")
+			}
+
+			else if(number == 0)
+			{
+               document.write("NUMBER IS EQUAL TO ZERO.")
+			}
+
+			else 
+			{
+				document.write("NUMBER IS NEGATIVE.")
+			}
+	</script>
+</body>
+</html>

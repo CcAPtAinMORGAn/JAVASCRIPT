@@ -1,0 +1,89 @@
+<html>  
+<head>  
+<title> Fibonacci Series in JavaScript </title>  
+</head>  
+<body>  
+<script>  
+// declaration of the variables  
+var n1 = 0,
+n2 = 1,
+next_num,
+i;  
+
+var num = parseInt (prompt (" Enter the limit for Fibonacci Series "));  
+
+document.write( "Fibonacci Series: "); 
+
+
+for ( i = 1; i <= num; i++)
+
+{  document.write (" <br> " +  n1);
+
+    next_num = n1 + n2;  
+    n1 = n2; 
+    n2 = next_num;  
+}  
+
+// suppose num = 8
+
+// // Loop iteration 1
+// i = 1
+// n1=0 & n2=1 print n1=0
+// next_num = n1 + n2; // next_num = 0 + 1 = 1
+// n1 = n2; // n1 = 1 (since n2=1)
+// n2 = next_num; // n2 = 1 (since  next_num =1)
+
+// // Loop iteration 2
+// i = 2
+//n1=1 & n2=1 print n1=1
+// next_num = n1 + n2; // next_num = 1 + 1 = 2
+// n1 = n2; // n1 = 1 (since n2=1)
+// n2 = next_num; // n2 = 2 (since  next_num =2)
+
+// // Loop iteration 3
+// i = 3
+// n1=1 & n2=2 print n1=1
+// next_num = n1 + n2; // next_num = 1 + 2 = 3
+// n1 = n2; // n1 = 2 (since n2=2)
+// n2 = next_num; // n2 = 3 (since  next_num =3)
+
+// // Loop iteration 4
+// i = 4
+// n1=2 & n2=3 print n1=2
+// next_num = n1 + n2; // next_num = 2 + 3 = 5
+// n1 = n2; // n1 = 3 (since n2=3)
+// n2 = next_num; // n2 = 5 (since  next_num =5)
+
+// // Loop iteration 5
+// i = 5
+//  n1=3 & n2=5 print n1=3
+// next_num = n1 + n2; // next_num = 3 + 5 = 8
+// n1 = n2; // n1 = 5 (since n2=5)
+// n2 = next_num; // n2 = 8 (since  next_num =8)
+
+// // Loop iteration 6
+// i = 6
+// n1=5 & n2=8 print n1=5
+// next_num = n1 + n2; // next_num = 5 + 8 = 13
+// n1 = n2; // n1 = 8 (since n2=8)
+// n2 = next_num; // n2 = 13 (since  next_num =13)
+
+// // Loop iteration 7
+// i = 7
+// n1=8 & n2=13 print n1=8
+// next_num = n1 + n2; // next_num = 8 + 13 = 21
+// n1 = n2; // n1 = 13 (since n2=13)
+// n2 = next_num; // n2 = 21 (since  next_num =21)
+
+// // Loop iteration 8
+// i = 8
+// n1=13 & n2=21 print n1=13
+// next_num = n1 + n2; // next_num = 13 + 21 = 34
+// n1 = n2; // n1 = 21 (since n2=21)
+// n2 = next_num; // n2 = 34 (since  next_num =34)
+
+// // End of loop because i = 8, which is not less than or equal to num = 8
+  
+</script>  
+</body>  
+</html>

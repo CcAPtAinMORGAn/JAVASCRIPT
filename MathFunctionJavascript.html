@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Math Function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("Square Root "+Math.sqrt(49)+"<br>")
+		document.write("Power "+Math.pow(2,2)+"<br>")
+		document.write("Max "+Math.max(25,3,66,4,55,42)+"<br>")
+		document.write("Min "+Math.min(25,3,66,4,55,42)+"<br>")
+		document.write("Round "+Math.round(23.5552)+"<br>")
+		document.write("Ceil "+Math.ceil(23.001)+"<br>")
+		document.write("Floor "+Math.floor(23.999)+"<br>")
+		document.write("Pi "+Math.PI+"<br>")
+		document.write(Math.random()+"<br>") //0-1
+		document.write("Random "+Math.floor(Math.random()*100)+"<br>")
+
+		var data = [1344,5652,3234,4907,5667,6223,3227,1238,989]
+
+		document.write(data[Math.floor(Math.random()*data.length)]+"<br><br>")
+
+		// CAPTCHA GENERATOR
+		var data1 = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','e']
+		var s = ""
+		for(i=1;i<=5;i++)
+		{
+			s=s+data1[Math.floor(Math.random()*data1.length)]
+		}
+		document.write(s+"<br><br>")
+
+		document.write("Cos=> "+Math.cos(90)+"<br>")
+		document.write("Sin=> "+Math.sin(90)+"<br>")
+		document.write("Tan=> "+Math.tan(90)+"<br>")
+	</script>
+
+</body>
+</html>

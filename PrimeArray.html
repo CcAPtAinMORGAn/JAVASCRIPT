@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prime Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		let num = [5,11,12,14]
+		document.write("Prime Numbers<br>")
+
+		for(let i=0;i<num.length;i++)
+		{
+			let b=0;
+			for(let j=1;j<=num[i];j++)
+			{
+				if(num[i]%j==0)
+				{
+					b++
+				}
+			}
+			
+			if(b==2)
+			{	
+
+				document.write(num[i]+"<br>")
+			}
+		}
+
+
+	</script>
+
+</body>
+</html>
